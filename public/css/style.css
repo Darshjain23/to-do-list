@@ -1,0 +1,33 @@
+*{
+    background-color: whitesmoke;
+}
+
+.trial{
+    text-align: center;
+}
+
+.img{
+    display: block;
+    margin: auto;
+    width: 20%;
+ }
+ 
+ .contactus{
+     text-align: center;
+     margin-top: 20px;
+ }
+
+.store{
+    margin: auto;
+}
+
+table,th{
+    border: 2px solid black;
+    /* padding: 50px; */
+}
+
+td{
+    border: 2px solid black;
+    padding: 30px 50px ;
+    text-align: center;
+}
