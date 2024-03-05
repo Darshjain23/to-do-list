@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
-    <title>List</title>
+    <title>Contact</title>
 </head>
 <body>
     <!-- <header>
         <a href="http://localhost:3000/">Home</a>
     </header> -->
+    <%- include('header.ejs' ) %>
     <h1 class="trial">Contact us</h1>
     <div class="contactus">
         <form method="post">
@@ -31,10 +32,10 @@
             <tr>
                 <td><%= fname[i]%></td>
                 <td><%= lname[i]%></td>
-                <td><button>Delete</button></td>
             </tr>
             <% } %>
         </table>
     </div>
+    <%- include('footer.ejs' ) %>
 </body>
 </html>

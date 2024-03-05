@@ -19,19 +19,38 @@ var count = 0;
 var a = []
 var b = []
 
-app.get('/', function (req, res) {
-    res.render('index.ejs',{
+
+  app.get('/', function (req, res) {
+    res.render('home.ejs')
+  })
+
+  app.get('/account/about', function (req, res) {
+    res.render('about.ejs')
+  })
+
+  app.get('/header', function (req, res) {
+    res.render('header.ejs')
+  })
+
+  app.get('/footer', function (req, res) {
+    res.render('footer.ejs')
+  })
+
+  app.get('/contact', function (req, res) {
+    res.render('contact.ejs',{
       'count':count,
       "fname":a,
       "lname":b
     })
   })
 
-  app.post('/',function(req,res){
+  app.post('/contact',function(req,res){
     count++;
+
     a.push(req.body.fname)
     b.push(req.body.lname)
-      res.render('index.ejs',{
+
+      res.render('contact.ejs',{
         'count': count,
         "fname":a,
         "lname":b
