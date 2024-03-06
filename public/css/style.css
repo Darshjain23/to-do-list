@@ -56,6 +56,18 @@ footer {
     text-align: center;
   }
 
-  .link{
+  /* .link{
     position: fixed;
+  } */
+
+  button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+  }
+
+  button:hover{
+    background-color: lightseagreen;
   }

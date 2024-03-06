@@ -24,7 +24,7 @@ var b = []
     res.render('home.ejs')
   })
 
-  app.get('/account/about', function (req, res) {
+  app.get('/about', function (req, res) {
     res.render('about.ejs')
   })
 
@@ -56,6 +56,20 @@ var b = []
         "lname":b
       })
   })
+
+  app.post('/clear', function(req,res){
+    count=0;
+    a = []
+    b = []
+    res.render('contact.ejs',{
+      'count': count,
+      "fname":'',
+      "lname":''
+    })
+    
+  })
+
+
 
 app.listen(2000,function(req,res){
     console.log("Server started")
